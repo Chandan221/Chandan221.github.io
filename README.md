@@ -9,11 +9,16 @@ Modeled after the reference site at <https://web.iitd.ac.in/~eez218527/>, with a
 ```
 chandan-website/
 ├── index.html          # Main single-page site
+├── bio.html            # Extended biography page
+├── cv.html             # Curriculum vitae (web version)
+├── Chandan.pdf         # CV (downloadable PDF)
 ├── images/
 │   ├── Chandan.jpeg            # Profile (large)
 │   ├── Chandan_small.jpeg      # Profile (header)
 │   ├── iitd_logo.png           # IITD logo (favicon + navbar)
-│   └── rank.jpeg               # Gold-medal proof image
+│   ├── rank.jpeg               # Gold-medal proof image
+│   ├── qr_code.png             # Office map QR code
+│   └── vcard.png               # VCard image
 ├── .nojekyll           # Disables Jekyll on GitHub Pages
 └── README.md
 ```

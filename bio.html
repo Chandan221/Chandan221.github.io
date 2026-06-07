@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chandan | Extended Biography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/iitd_logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root { --brand: #1f4e79; --brand-dark: #163a59; --accent: #f5a623; --bg-soft: #f4f7fb; }
+        body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #2b2b2b; background: #fff; padding-top: 70px; }
+        .navbar-brand img { height: 38px; }
+        .navbar { background: var(--brand) !important; }
+        .navbar .nav-link, .navbar-brand { color: #fff !important; }
+        .navbar .nav-link:hover { color: var(--accent) !important; }
+        .breadcrumb-custom { padding: 10px 0; margin-top: 10px; color: #888; }
+        .breadcrumb-custom a { color: var(--brand); text-decoration: none; }
+        .breadcrumb-custom a:hover { text-decoration: underline; }
+        h1 { color: var(--brand); font-weight: 700; }
+        .content { font-size: 1.05rem; line-height: 1.7; max-width: 800px; margin: 0 auto; }
+        footer { background: var(--brand-dark); color: #cdd6e0; padding: 18px 0; text-align: center; font-size: 0.85rem; margin-top: 40px; }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/iitd_logo.png" alt="IITD Logo" class="me-2">
+                <span class="fw-bold">Chandan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intro">Introduction</a></li>
+                            <li><a class="dropdown-item" href="bio.html">Biography</a></li>
+                            <li><a class="dropdown-item" href="cv.html">CV (Web)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#papers">Papers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#links">Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb-custom"><i class="fas fa-home me-1"></i><a href="index.html">Chandan</a> &gt; Biography</div>
+    </div>
+
+    <section style="padding: 20px 0;">
+        <div class="container">
+            <h1 class="mb-4">Biography of Chandan</h1>
+            <div class="content">
+                <p>Chandan is a PhD scholar in the field of Embedded Systems Designing at the Indian Institute of Technology Delhi, where he is supervised by Professor Subrat Kar in the Electrical Department. He joined the program in 2021, bringing with him a wealth of knowledge and expertise in the field.</p>
+
+                <p>Prior to pursuing his PhD, Chandan completed his Master of Science in Electronics from the Department of Electronic Science at the University of Delhi, where he was a University gold medalist at his M.Sc. examination. He has a strong background in PCB designing and microcontroller programming, skills that have helped him excel in his studies and research.</p>
+
+                <p>Before his master's degree, Chandan completed a Bachelor of Science (Honors) in Electronics from Zakir Hussain Delhi College, University of Delhi. Throughout his academic career, Chandan has demonstrated a strong dedication to his studies and a passion for the field of electronics and embedded systems.</p>
+
+                <p>As a PhD scholar, Chandan is focusing his research on the design and implementation of embedded systems for various applications. He is particularly interested in exploring the use of microcontrollers and other hardware and software components to create efficient and effective solutions for a range of real-world problems.</p>
+
+                <p>With his expertise in PCB design and microcontroller programming, Chandan is well-equipped to tackle the challenges of his research and make meaningful contributions to the field.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; <span id="year"></span> Chandan &mdash; PhD Research Scholar, IIT Delhi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
