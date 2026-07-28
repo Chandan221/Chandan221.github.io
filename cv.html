@@ -14,7 +14,7 @@
         .navbar { background: var(--brand) !important; }
         .navbar .nav-link, .navbar-brand { color: #fff !important; }
         .navbar .nav-link:hover { color: var(--accent) !important; }
-        .breadcrumb-custom { padding: 10px 0; margin-top: 10px; color: #888; }
+        .breadcrumb-custom { padding: 10px 0; margin-top: 10px; color: #888; font-size: 0.9rem; }
         .breadcrumb-custom a { color: var(--brand); text-decoration: none; }
         .breadcrumb-custom a:hover { text-decoration: underline; }
         h1 { color: var(--brand); font-weight: 700; font-size: 1.6rem; text-align: center; margin-bottom: 4px; }
@@ -23,6 +23,27 @@
         .cv-section { margin-bottom: 8px; }
         footer { background: var(--brand-dark); color: #cdd6e0; padding: 18px 0; text-align: center; font-size: 0.85rem; margin-top: 40px; }
         footer a { color: var(--accent); text-decoration: none; }
+
+        .cv-table td:first-child { width: 20px; }
+        .cv-table td:nth-child(2) { white-space: nowrap; }
+        .cv-table td:last-child { white-space: nowrap; text-align: right; }
+
+        @media (max-width: 767.98px) {
+            h1 { font-size: 1.3rem; }
+            h2 { font-size: 1.05rem; margin-top: 24px; }
+            .contact-line { font-size: 0.82rem; }
+            footer { font-size: 0.8rem; padding: 14px 0; }
+            .breadcrumb-custom { font-size: 0.8rem; }
+            .table-sm td, .table-sm th { font-size: 0.88rem; }
+        }
+        @media (max-width: 575.98px) {
+            h1 { font-size: 1.1rem; }
+            h2 { font-size: 0.95rem; }
+            .contact-line { font-size: 0.75rem; }
+            .table-sm td, .table-sm th { font-size: 0.82rem; }
+            .table-sm td { padding: 0.25rem; }
+            .cv-table td:last-child { white-space: normal; }
+        }
     </style>
 </head>
 <body>
@@ -78,21 +99,25 @@
                 <p><strong>Embedded Systems Designing:</strong> Embedded System Development; Wireless Sensor node Interface; Internet of Things (IoT); Graphic Designing.</p>
 
                 <h2>Education</h2>
-                <table class="table table-borderless table-sm">
-                    <tr><td style="width:20px;"></td><td style="width:100px;"><strong>Ph.D.</strong></td><td>Electrical Engineering, Indian Institute of Technology Delhi</td><td style="width:130px;text-align:right;">12/2021 &ndash; Ongoing</td></tr>
-                    <tr><td></td><td></td><td class="fst-italic">Research Topic: Precision Animal Husbandry in Ruminants using IoT</td><td></td></tr>
-                    <tr><td></td><td><strong>M.Sc.</strong></td><td>Electronics, Department of Electronic Science, University of Delhi, India</td><td style="text-align:right;">08/2018 &ndash; 08/2020</td></tr>
-                    <tr><td></td><td></td><td class="fst-italic">Major Project: Application Design for Test and Measurement of Antenna Parameters in LabVIEW</td><td></td></tr>
-                    <tr><td></td><td><strong>B.Sc. (Hons.)</strong></td><td>Electronic Science, University of Delhi, India</td><td style="text-align:right;">07/2015 &ndash; 05/2018</td></tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-borderless table-sm cv-table">
+                        <tr><td></td><td style="width:100px;"><strong>Ph.D.</strong></td><td>Electrical Engineering, Indian Institute of Technology Delhi</td><td style="width:130px;text-align:right;">12/2021 &ndash; Ongoing</td></tr>
+                        <tr><td></td><td></td><td class="fst-italic">Research Topic: Precision Animal Husbandry in Ruminants using IoT</td><td></td></tr>
+                        <tr><td></td><td><strong>M.Sc.</strong></td><td>Electronics, Department of Electronic Science, University of Delhi, India</td><td style="text-align:right;">08/2018 &ndash; 08/2020</td></tr>
+                        <tr><td></td><td></td><td class="fst-italic">Major Project: Application Design for Test and Measurement of Antenna Parameters in LabVIEW</td><td></td></tr>
+                        <tr><td></td><td><strong>B.Sc. (Hons.)</strong></td><td>Electronic Science, University of Delhi, India</td><td style="text-align:right;">07/2015 &ndash; 05/2018</td></tr>
+                    </table>
+                </div>
 
                 <h2>Experience</h2>
-                <table class="table table-borderless table-sm">
-                    <tr><td style="width:20px;"></td><td><strong>Senior Research Fellow (SRF)</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="width:130px;text-align:right;">01/2024 &ndash; Present</td></tr>
-                    <tr><td></td><td><strong>Junior Research Fellow (JRF)</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="text-align:right;">07/2023 &ndash; 12/2023</td></tr>
-                    <tr><td></td><td><strong>Project Assistant</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="text-align:right;">06/2021 &ndash; 07/2023</td></tr>
-                    <tr><td></td><td><strong>Embedded Engineer</strong>, Trydan Motors Pvt. Ltd., Delhi, India</td><td style="text-align:right;">05/2019 &ndash; 06/2021</td></tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-borderless table-sm cv-table">
+                        <tr><td></td><td><strong>Senior Research Fellow (SRF)</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="width:130px;text-align:right;">01/2024 &ndash; Present</td></tr>
+                        <tr><td></td><td><strong>Junior Research Fellow (JRF)</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="text-align:right;">07/2023 &ndash; 12/2023</td></tr>
+                        <tr><td></td><td><strong>Project Assistant</strong>, Dept. of Electrical Engineering, IIT Delhi, India</td><td style="text-align:right;">06/2021 &ndash; 07/2023</td></tr>
+                        <tr><td></td><td><strong>Embedded Engineer</strong>, Trydan Motors Pvt. Ltd., Delhi, India</td><td style="text-align:right;">05/2019 &ndash; 06/2021</td></tr>
+                    </table>
+                </div>
 
                 <h2>Awards &amp; Honors</h2>
                 <ul>
